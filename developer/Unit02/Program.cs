@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Unit02;
 
 namespace Unit02
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+    class Program{
+        ///Begins the game !
+        static int Main(string[] args){
+            Director director = new Director();
+            director.StartGame();
+            return 0;
         }
     }
 }
